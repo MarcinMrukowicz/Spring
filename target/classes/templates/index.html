@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
  
@@ -6,8 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<h1>Hello</h1>
- 
-<h2>Fellow Spring Framework Gurus!!!</h2>
+<h1>Logowanie</h1>
+
+   <form action="#" th:action="@{/}" th:object="${person}" method="post">
+   
+   <input th:field="*{name}" type="text" />
+
+   <input th:field="*{surname}" type="password" />
+   
+   <input type="submit" value="Submit" /> 
+  
+   </form>
+   
 </body>
 </html>

@@ -8,6 +8,17 @@ public class User
 	private boolean blocked;
 	private int miss;
 	
+	
+	public User()
+	{
+		this.login=null;
+		this.password=null;
+		this.permissions=0;
+		this.blocked=false;
+		this.miss=0;
+	
+	}
+	
 	public User(String login, String password, int permissions)
 	{
 		this.login=login;
@@ -68,6 +79,7 @@ public class User
 	
 	public boolean isLoggedProperly(String login, String password)
 	{
+		if (blocked==false)
 		if (login.equals(this.login) && password.equals(this.password))
 			return true;
 		else 

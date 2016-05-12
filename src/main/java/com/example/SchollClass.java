@@ -14,6 +14,13 @@ public class SchollClass
 		return "Wybierz przedmiot, który Cię interesuje, spośród"+getAllSubjects();
 	}
 	
+	public SchollClass()
+	{
+		this.name=null;
+		this.students=null;
+		this.subjects=null;
+	}
+	
 	public SchollClass(String name, ArrayList<Student> students,ArrayList<Subject> subjects)
 	{
 		this.name=name;

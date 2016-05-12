@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import javax.validation.Valid;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
+//@RestController
 public class HelloController 
 {
 	ArrayList<User> users=new ArrayList<>();
@@ -192,7 +191,7 @@ public class HelloController
 		return "Dodano użytkownika:"+login;
 	}
 	
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+   /* @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello()
     {
     	users.add(new User("admin","na",0));
@@ -219,7 +218,7 @@ public class HelloController
     	
         return "Witaj w wirtualnym dzienniku. Musisz podać swój login i haslo. \n wpisz w adresie przegląrki.";
     }
-    
+    */
     
     @RequestMapping(value="/mainpannel", method=RequestMethod.GET)
     public String mainPannel()

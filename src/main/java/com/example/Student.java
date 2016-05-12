@@ -4,6 +4,13 @@ public class Student extends Person
 {
 	private int nr;
 	
+	
+	public Student()
+	{
+	super();
+	nr=0;
+	}
+	
 	public Student(String name, String surname, int nr)
 	{
 		super(name, surname);
