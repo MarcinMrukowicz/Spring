@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>test</title>
+</head>
+<body>
+<form action="#" th:action="@{/blockuser}" th:object="${testowa}" method="post">
+   <input type="text" th:field="${testowa.napis}" /> <p></p>
+ name:<input type="text" th:field="${testowa.cos}" /> <p></p>
+ surname:<input type="text" th:field="${testowa.inne}" /> <p></p>
+
+  
+ <input type="submit" value="Submit" /> 
+</form>
+</body>
+</html>
